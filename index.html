@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap" rel="stylesheet" />
+
+    <!-- styles -->
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Calculator App</title>
+</head>
+
+<body>
+    <div class="calculator">
+        <header class="calc-header">
+            <a class="calc__logo logo" href="index.html">calc</a>
+
+            <div class="theme">
+                <span class="theme__text">Theme</span>
+
+                <div class="theme__control-wrapper">
+                    <input class="theme__radio hidden" type="radio" name="theme" value="dark" id="dark-radio" />
+                    <input class="theme__radio hidden" type="radio" name="theme" value="light" id="light-radio" />
+                    <input class="theme__radio hidden" type="radio" name="theme" value="vintage" id="vintage-radio" />
+
+                    <div class="theme__indicators">
+                        <span>1</span>
+                        <span>2</span>
+                        <span>3</span>
+                    </div>
+
+                    <div class="theme__control">
+                        <label for="dark-radio" class="theme__label">
+                            <span class="hidden">Dark theme</span>
+                        </label>
+                        <label for="light-radio" class="theme__label">
+                            <span class="hidden">Light theme</span>
+                        </label>
+                        <label for="vintage-radio" class="theme__label">
+                            <span class="hidden">Vintage theme</span>
+                        </label>
+
+                        <span class="theme__circle"></span>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <main class="calc-main">
+            <input class="calc_input" type="text" inputmode="number" placeholder="0" />
+
+            <div class="calc_board">
+                <button class="key key--7" type="button">7</button>
+                <button class="key key--8" type="button">8</button>
+                <button class="key key--9" type="button">9</button>
+                <button class="key key--del" type="button">Del</button>
+                <button class="key key--4" type="button">4</button>
+                <button class="key key--5" type="button">5</button>
+                <button class="key key--6" type="button">6</button>
+                <button class="key key--add" type="button">+</button>
+                <button class="key key--1" type="button">1</button>
+                <button class="key key--2" type="button">2</button>
+                <button class="key key--3" type="button">3</button>
+                <button class="key key--subtract" type="button">-</button>
+                <button class="key key--decimal" type="button">.</button>
+                <button class="key key--0" type="button">0</button>
+                <button class="key key--divide" type="button">/</button>
+                <button class="key key--multiply" type="button">x</button>
+                <button class="key key--reset" type="button">Reset</button>
+                <button class="key key--equal" type="button">=</button>
+            </div>
+        </main>
+    </div>
+
+    <script src="./js/main.js"></script>
+</body>
+
+</html>
